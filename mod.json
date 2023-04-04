@@ -1,0 +1,18 @@
+{
+  "Name": "Example.Mod",
+  "Description": "A cool mod that does cool stuff",
+  "Version": "1.0.0",
+
+  "LoadPriority": 1,
+  "ConVars": [],
+  "Scripts": [
+    {
+      "Path": "example.nut",
+      "RunOn": "SERVER",
+      "ClientCallback": {
+        "Before": "example_callback"
+      }
+    }
+  ],
+  "Localisation": []
+}
