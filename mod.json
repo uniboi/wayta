@@ -1,18 +1,15 @@
 {
-  "Name": "Example.Mod",
-  "Description": "A cool mod that does cool stuff",
+  "Name": "Odd.WhatAreYouTalkingAbout",
+  "Description": "Tags a person in chat that was last killed by you",
   "Version": "1.0.0",
-
-  "LoadPriority": 1,
-  "ConVars": [],
+  "LoadPriority": 2,
   "Scripts": [
     {
-      "Path": "example.nut",
-      "RunOn": "SERVER",
+      "Path": "what_are_you_talking_about.nut",
+      "RunOn": "CLIENT",
       "ClientCallback": {
-        "Before": "example_callback"
+        "Before": "WhatAreYouTalkingAbout_Init"
       }
     }
-  ],
-  "Localisation": []
+  ]
 }
