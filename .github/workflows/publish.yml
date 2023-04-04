@@ -43,14 +43,14 @@ jobs:
           community: northstar
           # Name of the team to publish the mod under
           # This should be modified if your github username is different than your team name on Thunderstore
-          namespace: ${{ github.repository_owner }} # <------ DOUBLE CHECK THIS
+          namespace: odds
           # Name of the package
-          name: ${{ env.name }} # This can be modified if the package name differs from the repo name
+          name: What are you talking about
           # Package version to publish
           version: ${{ env.cleanVersion }} # This is the tag that was created in the release but without the leading 'v'
           # Description of the mod
-          description: example mod description
+          description: Show a tag for messages from authors recently killed by you
           # Thunderstore API token
           token: ${{ secrets.TS_KEY }} 
           # Directory to wrap the contents of the repo in
-          wrap: mods/${{ github.repository_owner }}.${{ env.name }} # This will wrap your Author.ModName folder in a mods/ folder before publishing
+          wrap: mods/Odds.${{ env.name }} # This will wrap your Author.ModName folder in a mods/ folder before publishing
